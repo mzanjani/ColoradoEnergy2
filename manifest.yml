@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ColoradoEnergy2
+  host: ColoradoEnergy2
+  disk_quota: 1024M
+  services:
+  - ColoradoEnergy2-cloudantNoSQLDB
+  - ColoradoEnergy2-iotf-service
+  env:
+    redacted_message: '[PRIVATE DATA HIDDEN]'
